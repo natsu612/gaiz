@@ -1,0 +1,44 @@
+body {
+  background: grey;
+}
+
+.spinner {
+  box-sizing: border-box;
+  border: solid .75em transparent;
+  background: url(http://mxiii.cms.ccue.ca/wp-content/uploads/2016/01/4800736-jarvis-iron-man-wallpaper-android-40.jpg) 50%/cover padding-box;
+}
+.spinner, .spinner:before {
+  position: absolute;
+  margin: -8em;
+  width: 16em;
+  height: 16em;
+  top: 50%;
+  left: 50%;
+  border-radius: 30%;
+}
+.spinner:before {
+  z-index: -1;
+  background: -webkit-gradient(linear,right bottom,left top,from(#da1b60),to(#ff8a00));
+  background: linear-gradient(to top left,#da1b60,#ff8a00);
+  animation: r 3s linear infinite;
+  content: '';
+}
+
+@keyframes r {
+  to {
+    transform: rotate(1turn);
+  }
+}
+body{
+  background:#02b296;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:300px;
+  margin:50px;
+}
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+h1{
+  font-family: 'Great Vibes', cursive;
+}
+
